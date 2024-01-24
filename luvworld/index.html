@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/adattoworkmin.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+	<title>LuvWorld | Головна</title>
+</head>
+<body>
+	<div class="wrapper flex flexdc">
+		<div class="adaptive-menu" id="navigation">
+			<ul class="adapt-list">
+				<li><a href="#lider">ЛIДЕРИ</a></li>
+				<li><a href="#">ДОНАТ</a></li>
+				<li><a href="#sociall">СОЦ.МЕРЕЖI</a></li>
+			</ul>
+		</div>
+		<header id="start" class="header flex jsc alic">
+			<div class="head-content flex alic">
+				<p class="name">LUVCRAFT</p>
+				<ul class="header-list flex">
+					<li><a href="#lider">ЛІДЕРИ</a></li>
+					<li><a href="#">ДОНАТ</a></li>
+					<li><a href="#social">СОЦ.МЕРЕЖІ</a></li>
+				</ul>
+				<p class="ip">IP: play.luvcraft.online </p>
+				<button class="menu-button" type="button" aria-label="close" aria-controls="navigation" aria-expanded="false">
+			</button>
+			</div>
+		</header>
+		<div class="content">
+			<div class="pvp-block flex alic jsc">
+				<div class="pvp-radius flex">
+					<img class ="pvp-image"src="images/art 1.png" alt="">
+					<div class="pvp-text-block flex jsc alic flexdc">
+						<h2 class="pvp-header"><?php the_field('pvp_header'); ?></h2>
+						<p class="pvp-text"><?php the_field('pvp_text'); ?></p>
+						<a class="pvp-button" href="<?php the_field('discord_link'); ?>"><p>ПОЧАТИ ГРУ</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="lider-block flex jsc alic flexdc">
+				<p class="header-text" id="lider">СПИСОК ЛІДЕРІВ ТИЖНЯ</p>
+				<div class="lider-stats flex">
+					<ul class="lider-list flex flexdc">
+						<li class="flex alic jsc"><img src="images/crown1.png" alt=""><div class="lid-box flex flexdc"><h3 class="one-top">1 МІСЦЕ</h3><div class="lid-inf flex"><h3><?php the_field('one-top'); ?></h3><p><?php the_field('one-balls'); ?> ОЧОК</p></div></div></li>
+						<li class="flex alic jsc"><img src="images/crown2.png" alt=""><div class="lid-box flex flexdc"><h3 class="two-top">2 МЕСТО</h3><div class="lid-inf flex"><h3><?php the_field('two-top'); ?></h3><p><?php the_field('two-balls'); ?> ОЧОК</p></div></div></li>
+						<li class="flex alic jsc"><img src="images/crown3.png" alt=""><div class="lid-box flex flexdc"><h3 class="three-top">3 МЕСТО</h3><div class="lid-inf flex"><h3><?php the_field('three-top'); ?></h3><p><?php the_field('three-balls'); ?> ОЧОК</p></div></div></li>
+					</ul>
+					<img class="lid-img" src="images/art2.png" alt="">
+				</div>
+			</div>
+			<div class="don-block flex jsc alic flexdc">
+				<h2 class="don-header"><?php the_field('three_header'); ?></h2>
+			<div class="don-radius flex">
+				<img class ="don-image"src="images/art3.png" alt="">
+				<div class="don-text-block flex jsc alic flexdc">
+						
+						<p class="don-text"><?php the_field('three_text'); ?></p>
+						<a class="don-button" href="<?php the_field('donatello'); ?>"><p>КУПИТИ</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div id="social" class="social-block flex jsc alic flexdc">
+				<div class="header-text">СОЦ МЕРЕЖІ</div>
+				<ul class='social-list flex'>
+					<li class="social-item flex alic jsc"><img src="images/discord.png" alt=""><div class="soc-block-text flex flexdc"><a href="<?php the_field('discord_link'); ?>">СЕРВЕР DISCORD</a><p><?php the_field('dis-memb'); ?> УЧАСНИКІВ</p></div></li>
+					<li class="social-item flex alic jsc"><img src="images/telegram.png" alt=""><div class="soc-block-text flex flexdc"><a href="<?php the_field('telegram_link'); ?>">КАНАЛ TELEGRAM</a><p><?php the_field('tel-memb'); ?> УЧАСНИКІВ</p></div></li>
+					<li class="social-item flex alic jsc"><img src="images/monitoring.png" alt=""><div class="soc-block-text flex flexdc"><a href="<?php the_field('monitor_link'); ?>">МОНИТОРИНГ</a><p class="flex jsc alic"><img src="images/stars.png" alt=""> <?php the_field('mon-memb'); ?> ОЦІНОК</p></div></li>
+				</ul>
+			</div>
+			<div class="howtoplay-block flex flexdc alic jsc">
+				<div class="header-text">ЯК ПОЧАТИ ГРАТИ</div>
+				<ul class="howtoplay-list flex alic jsc">
+					<li class="flex flexdc jsc alic"><img src="images/how1.png" alt=""><p>ЗАЙДІТЬ В ГРУ</p></li>
+					<li class="flex flexdc jsc alic"><img src="images/how2.png" alt=""><p>ДОБАВТЕ СЕРВЕР У СПИСОК</p></li>
+					<li class="flex flexdc jsc alic"><img src="images/how3.png" alt=""><p>НАТИСНІТЬ "ПРИЄДНАТИСЯ"	</p></li>
+				</ul>
+			</div>
+			<div class="arrow-block flex">
+				<a href="#start"class="arrow flex jsc alic">
+					<img src="<?php bloginfo('template_url'); ?>/assets/images/arrow.png" alt="">
+					<p>НАВЕРХ</p>
+				</a>
+			</div>
+		</div>
+		<footer class="flex jsc alic flexdc">
+			<h3>LUV CRAFT</h3>
+			<p>LUV CRAFT 2024 ВСІ ПРАВА ЗАХИЩЕНІ</p>
+			<p class="madeby">ТГ і ДС розробника сайту - @adattostudio</p>
+		</footer>
+	</div>
+	<script src="./script.js"></script>
+</body>
+</html>
